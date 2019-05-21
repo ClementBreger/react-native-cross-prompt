@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Prompt from './inputprompt.js'
 
 openPrompt = () => {
@@ -23,22 +23,25 @@ export default class App extends Component {
     }
   }
 
+  _handlePrompt = (value) => {
+    alert(value)
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.welcome}>Welcome to react-native-input-prompt</Text>
         <Text style={styles.instructions}>Tap the button to open the prompt!</Text>
-        <Button
-          title="Show prompt"
-          onPress={() => this.setState({ prompt1Visible: true })}
-        />
+        <TouchableOpacity style={styles.button} onPress={() => this.setState({ prompt1Visible: true })}>
+          <Text style={styles.buttonText}>Show prompt</Text>
+        </TouchableOpacity>
         <Prompt
           visible={this.state.prompt1Visible}
           title="Title"
           description="This is the prompt description."
           placeholder="placeholder"
           onCancel={(visible) => this.setState({ prompt1Visible: visible })}
-          onSubmit={(value) => alert(value)}
+          onSubmit={(value) => this._handlePrompt(value)}
         />
       </View>
     );
@@ -62,5 +65,15 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  button: {
+    marginTop: 15,
+    backgroundColor: 'blue',
+    padding: 10,
+    elevation: 5,
+  },
+  buttonText:{
+    color: 'white',
+    fontWeight: 'bold',
   },
 });
