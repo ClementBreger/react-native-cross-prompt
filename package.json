@@ -1,0 +1,36 @@
+{
+  "name": "react-native-input-prompt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClementBreger/react-native-input-prompt.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "react",
+    "native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "input",
+    "prompt"
+  ],
+  "author": "Clement Breger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClementBreger/react-native-input-prompt/issues"
+  },
+  "homepage": "https://github.com/ClementBreger/react-native-input-prompt#readme",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.54.1"
+  }
+}
