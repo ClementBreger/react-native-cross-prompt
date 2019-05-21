@@ -8,18 +8,14 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import Prompt from './inputprompt.js'
-
-openPrompt = () => {
-
-}
+import Prompt from 'react-native-input-prompt'
 
 export default class App extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      prompt1Visible: false,
+      promptVisible: false,
     }
   }
 
@@ -32,11 +28,11 @@ export default class App extends Component {
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to react-native-input-prompt</Text>
         <Text style={styles.instructions}>Tap the button to open the prompt!</Text>
-        <TouchableOpacity style={styles.button} onPress={() => this.setState({ prompt1Visible: true })}>
+        <TouchableOpacity style={styles.button} onPress={() => this.setState({ promptVisible: true })}>
           <Text style={styles.buttonText}>Show prompt</Text>
         </TouchableOpacity>
         <Prompt
-          visible={this.state.prompt1Visible}
+          visible={this.state.promptVisible}
           title="Title"
           description="This is the prompt description."
           placeholder="placeholder"

@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
 export default class Prompt extends Component {
@@ -25,21 +26,24 @@ export default class Prompt extends Component {
     render() {
         if (this.props.visible) {
             return (
-                <View style={styles.container}>
-                    <Text style={styles.title}>{this.props.title}</Text>
-                    <Text style={styles.description}>{this.props.description}</Text>
-                    <TextInput style={styles.input}
-                        value={this.state.value}
-                        onChangeText={(value) => this.setState({ value })}
-                        placeholder={this.props.placeholder}
-                    />
-                    <View style={styles.buttons}>
-                        <TouchableOpacity style={styles.button} onPress={this._onCancelPress}>
-                            <Text style={styles.buttonText}>CANCEL</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={styles.button} onPress={this._onSubmit}>
-                            <Text style={styles.buttonText}>OK</Text>
-                        </TouchableOpacity>
+                <View style={styles.background}>
+                    <View style={styles.container}>
+                        <Text style={styles.title}>{this.props.title}</Text>
+                        <Text style={styles.description}>{this.props.description}</Text>
+                        <TextInput style={styles.input}
+                            autoFocus={this.props.visible}
+                            value={this.state.value}
+                            onChangeText={(value) => this.setState({ value })}
+                            placeholder={this.props.placeholder}
+                        />
+                        <View style={styles.buttons}>
+                            <TouchableOpacity style={styles.button} onPress={this._onCancelPress}>
+                                <Text style={styles.buttonText}>CANCEL</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={styles.button} onPress={this._onSubmit}>
+                                <Text style={styles.buttonText}>OK</Text>
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>
             )
@@ -49,16 +53,33 @@ export default class Prompt extends Component {
             )
         }
     }
+}
 
+Prompt.propTypes = {
+    visible: PropTypes.bool,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    placeholder: PropTypes.string,
+    value: PropTypes.string,
+    onCancel: PropTypes.func.isRequired,
+    onSubmit: PropTypes.func.isRequired,
 }
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: 'white',
-        width: '80%',
-        padding: 20,
-        elevation: 4,
+    background: {
         position: 'absolute',
+        height: '110%',
+        width: '110%',
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        justifyContent: 'center',
+        elevation: 10,
+    },
+    container: {
+        alignSelf: 'center',
+        backgroundColor: 'white',
+        padding: 20,
+        width: '75%',
+        elevation: 10,
     },
     title: {
         fontWeight: 'bold',
