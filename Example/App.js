@@ -8,7 +8,7 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import Prompt from 'react-native-input-prompt'
+import Prompt from 'react-native-cross-prompt'
 
 export default class App extends Component {
 
