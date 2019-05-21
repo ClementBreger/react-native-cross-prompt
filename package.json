@@ -1,21 +1,21 @@
 {
-  "name": "react-native-input-prompt",
+  "name": "react-native-cross-prompt",
   "version": "1.0.0",
-  "description": "",
+  "description": "A cross-platform Component for React-Native apps to prompt for user input.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ClementBreger/react-native-input-prompt.git"
+    "url": "git+https://github.com/ClementBreger/react-native-cross-prompt.git"
   },
   "keywords": [
     "react-native",
     "react-component",
     "react-native-component",
     "react",
-    "react",
+    "cross",
     "native",
     "mobile",
     "ios",
@@ -27,9 +27,9 @@
   "author": "Clement Breger",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ClementBreger/react-native-input-prompt/issues"
+    "url": "https://github.com/ClementBreger/react-native-cross-prompt/issues"
   },
-  "homepage": "https://github.com/ClementBreger/react-native-input-prompt#readme",
+  "homepage": "https://github.com/ClementBreger/react-native-cross-prompt#readme",
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.54.1"
   }

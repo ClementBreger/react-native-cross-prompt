@@ -36,7 +36,7 @@ export default class App extends Component {
           title="Title"
           description="This is the prompt description."
           placeholder="placeholder"
-          onCancel={(visible) => this.setState({ prompt1Visible: visible })}
+          onCancel={(visible) => this.setState({ promptVisible: visible })}
           onSubmit={(value) => this._handlePrompt(value)}
         />
       </View>
