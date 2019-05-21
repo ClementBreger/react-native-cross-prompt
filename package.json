@@ -1,6 +1,6 @@
 {
   "name": "react-native-cross-prompt",
-  "version": "1.0.1",
+  "version": "1.0.12",
   "description": "A cross-platform Component for React-Native apps to prompt for user input.",
   "main": "index.js",
   "scripts": {
