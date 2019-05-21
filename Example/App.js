@@ -6,9 +6,9 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import Prompt from 'react-native-cross-prompt'
+import Prompt from './node_modules/react-native-cross-prompt'
 
 export default class App extends Component {
 
