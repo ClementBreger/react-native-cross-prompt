@@ -1,10 +1,10 @@
-# react-native-input-prompt
+# react-native-cross-prompt
 A cross-platform Component for React-Native apps to prompt for user input.
 
 ## Installation
 
 ```
-$ npm install react-native-input-prompt --save
+$ npm install react-native-cross-prompt --save
 ```
 
 ## Demo
@@ -16,7 +16,7 @@ $ npm install react-native-input-prompt --save
 
 ## Usage
 ```js
-import Prompt from 'react-native-input-prompt'
+import Prompt from 'react-native-cross-prompt'
 
 constructor(props) {
   super(props);
