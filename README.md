@@ -52,7 +52,7 @@ props:
 - `onSubmit` (function, required) -- Function that is called when "OK" was fired
 
 ## Testing
-Install node modules
+### Install node modules
 `npm install`
-Run
+### Run
 `npm test`
