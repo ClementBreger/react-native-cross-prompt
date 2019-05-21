@@ -9,9 +9,9 @@ $ npm install react-native-cross-prompt --save
 
 ## Demo
 <p align="left">
-  <img src="demos/demo1.png" width="200" title="screenshot 1">
-  <img src="demos/demo2.png" width="200" title="screenshot 2">
-  <img src="demos/demo3.png" width="200" title="screenshot 3">
+  <img src="https://github.com/ClementBreger/react-native-cross-prompt/blob/master/demos/demo1.png" width="200" title="screenshot 1">
+  <img src="https://github.com/ClementBreger/react-native-cross-prompt/blob/master/demos/demo2.png" width="200" title="screenshot 2">
+  <img src="https://github.com/ClementBreger/react-native-cross-prompt/blob/master/demos/demo3.png" width="200" title="screenshot 3">
 </p>
 
 ## Usage
