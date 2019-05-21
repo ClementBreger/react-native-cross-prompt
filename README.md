@@ -1,2 +1,2 @@
 # react-native-input-prompt
-'react-native-input-prompt' is a cross-platform Component for React-Native apps.
+A cross-platform Component for React-Native apps to prompt for user input.
