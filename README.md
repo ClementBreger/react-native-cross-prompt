@@ -31,7 +31,7 @@ _handlePrompt = (value) => {
 
 <View>
   <Prompt
-    visible={this.state.prompt1Visible}
+    visible={this.state.promptVisible}
     title="Title"
     description="This is the prompt description."
     placeholder="placeholder"
