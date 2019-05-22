@@ -1,5 +1,12 @@
 # react-native-cross-prompt
-A cross-platform Component for React-Native apps to prompt for user input.
+A cross-platform, Google/Android style, Component for React-Native apps to prompt for user input.
+
+I might add an iOS style, if requested by the community.
+
+## NPM
+```
+https://www.npmjs.com/package/react-native-cross-prompt
+```
 
 ## Installation
 
@@ -30,8 +37,13 @@ _handlePrompt = (value) => {
 }
 
 <View>
+  <Text>Tap the button to show the prompt!</Text>
+  <Button
+    title="Press me!"
+    onPress={() => this.setState({ promptVisible: true })}
+  />
   <Prompt
-    visible={this.state.prompt1Visible}
+    visible={this.state.promptVisible}
     title="Title"
     description="This is the prompt description."
     placeholder="placeholder"
