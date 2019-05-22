@@ -1,6 +1,11 @@
 # react-native-cross-prompt
 A cross-platform Component for React-Native apps to prompt for user input.
 
+## NPM
+```
+https://www.npmjs.com/package/react-native-cross-prompt
+```
+
 ## Installation
 
 ```
