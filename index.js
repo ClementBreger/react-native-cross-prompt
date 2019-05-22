@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Platform } from 'react-native';
 
 export default class Prompt extends Component {
 
@@ -8,6 +8,11 @@ export default class Prompt extends Component {
         super(props);
         this.state = {
             value: props.value,
+        }
+        if (Platform.OS === 'android') {
+            styles = require('./styles.android.js')
+        } else if (Platform.OS === 'ios') {
+            styles = require('./styles.ios.js')
         }
     }
 
@@ -64,45 +69,3 @@ Prompt.propTypes = {
     onCancel: PropTypes.func.isRequired,
     onSubmit: PropTypes.func.isRequired,
 }
-
-const styles = StyleSheet.create({
-    background: {
-        position: 'absolute',
-        height: '110%',
-        width: '110%',
-        backgroundColor: 'rgba(0, 0, 0, 0.6)',
-        justifyContent: 'center',
-        elevation: 10,
-    },
-    container: {
-        alignSelf: 'center',
-        backgroundColor: 'white',
-        padding: 20,
-        width: '75%',
-        elevation: 10,
-    },
-    title: {
-        fontWeight: 'bold',
-        color: 'black',
-    },
-    description: {
-        marginTop: 10,
-    },
-    input: {
-        marginTop: 10,
-        borderBottomColor: 'lightgrey',
-        borderBottomWidth: 1,
-    },
-    buttons: {
-        marginTop: 10,
-        flexDirection: 'row',
-        alignSelf: 'flex-end',
-    },
-    button: {
-        margin: 10,
-    },
-    buttonText: {
-        color: 'blue',
-        fontWeight: 'bold',
-    },
-});
