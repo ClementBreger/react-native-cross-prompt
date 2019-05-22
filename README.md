@@ -30,6 +30,11 @@ _handlePrompt = (value) => {
 }
 
 <View>
+  <Text>Tap the button to show the prompt!</Text>
+  <Button
+    title="Press me!"
+    onPress={() => this.setState({ promptVisible: true })}
+  />
   <Prompt
     visible={this.state.promptVisible}
     title="Title"
