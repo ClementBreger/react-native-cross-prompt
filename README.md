@@ -1,5 +1,6 @@
 # react-native-cross-prompt
-A cross-platform Component for React-Native apps to prompt for user input.
+A cross-platform, Google/Android style, Component for React-Native apps to prompt for user input.
+I might expand to a platform-based style (Android/Google & iOS), if requested.
 
 ## NPM
 ```
