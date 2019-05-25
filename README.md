@@ -19,6 +19,7 @@ $ npm install react-native-cross-prompt --save
   <img src="https://github.com/ClementBreger/react-native-cross-prompt/blob/master/demos/demo2.png" width="200" title="screenshot 2">
   <img src="https://github.com/ClementBreger/react-native-cross-prompt/blob/master/demos/demo3.png" width="200" title="screenshot 3">
 </p>
+
 ### iOS
 Pending..
 
