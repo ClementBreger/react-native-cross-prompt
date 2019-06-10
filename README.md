@@ -13,11 +13,15 @@ $ npm install react-native-cross-prompt --save
 ```
 
 ## Demo
+### Android
 <p align="left">
   <img src="https://github.com/ClementBreger/react-native-cross-prompt/blob/master/demos/demo1.png" width="200" title="screenshot 1">
   <img src="https://github.com/ClementBreger/react-native-cross-prompt/blob/master/demos/demo2.png" width="200" title="screenshot 2">
   <img src="https://github.com/ClementBreger/react-native-cross-prompt/blob/master/demos/demo3.png" width="200" title="screenshot 3">
 </p>
+
+### iOS
+Pending..
 
 ## Usage
 ```js
