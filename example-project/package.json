@@ -9,13 +9,13 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.8",
-    "react-native-cross-prompt": "^1.1.0"
+    "react-native-cross-prompt": "^1.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.0",
-    "@babel/runtime": "^7.5.2",
-    "babel-jest": "^24.8.0",
-    "jest": "^24.8.0",
+    "@babel/core": "^7.6.3",
+    "@babel/runtime": "^7.6.3",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.54.1",
     "react-test-renderer": "16.8.3"
   },
